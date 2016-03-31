@@ -126,13 +126,13 @@ satisfy叫做demand，后来换了（文件）名字但相关渲染代码没有�
 
         In [1]: %cd E:\agent4\cangqiong #转入仓库地址，要是用F5载入的脚本就不用这个
         E:\agent4\cangqiong
-        
+
         In [2]: import pandas as pd #载入pandas模块
-        
+
         In [3]: df=pd.read_csv('data/demand_2016.03.10_510100_.csv',index_col=0) #读取一个csv文件
-        
+
         In [4]: df #看一下读取表格的大概样子
-        Out[4]: 
+        Out[4]:
               hour  longitude  latitude  value
         0        0   104.0881   30.6660      4
         1        0   103.6453   30.9870      3
@@ -195,16 +195,32 @@ satisfy叫做demand，后来换了（文件）名字但相关渲染代码没有�
         3911    23   104.2416   30.5825      5
         3912    23   104.0216   30.6926      8
         3913    23   103.8994   30.6095      5
-        
+
         [3914 rows x 4 columns]
-        
+
         In [5]: df['value'].groupby(df['hour']).sum().plot() #以时间分类画一张曲线图
         Out[5]: <matplotlib.axes._subplots.AxesSubplot at 0xf0b2ba8>
         ￼
 <img src="image\p9.png">
 
 实际上是2016/03/10成都的24小时的需求总量曲线图。
-		
+
+### 盐市口的打车难易度曲线
+
+				def loc_seq(df,longitude=104.06,latitude=30.67):
+				    distance=np.sqrt((df['longitude']-longitude)**2+(df['latitude']-latitude)**2)
+				    df2=df.groupby(df['hour']).apply(lambda df:df.ix[distance.ix[df.index].sort(inplace=False)[:3].index].mean())
+				    df2.index=df2['hour']
+				    return df2
+
+				satisfy_df=pd.read_csv('data/satisfy_2016.03.10_510100_.csv')
+				df2=loc_seq(satisfy_df)
+				df2['value'].plot()
+				plt.title('satisfy')
+				plt.plot()
+
+<img src="image\p10.png">
+
 ## 信度
 
 这个数据来源不明，使用请谨慎。特别是可以看到返回的json数据里标的
