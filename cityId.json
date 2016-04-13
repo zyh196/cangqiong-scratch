@@ -1,0 +1,82 @@
+{
+        "110100": {
+            "id": "110100",
+            "english": "beijing",
+            "bigEnglish": "Beijing",
+            "chinese": "北京市",
+            "lng": "39.9169",
+            "lat": "116.4100"
+        },
+        "310100": {
+            "id": "310100",
+            "english": "shanghai",
+            "bigEnglish": "Shanghai",
+            "chinese": "上海市",
+            "lng": "31.240749",
+            "lat": "121.464244"
+        },
+        "440100": {
+            "id": "440100",
+            "english": "guangzhou",
+            "bigEnglish": "Guangzhou",
+            "chinese": "广州市",
+            "lng": "23.135733",
+            "lat": "113.273591"
+        },
+        "440300": {
+            "id": "440300",
+            "english": "shenzhen",
+            "bigEnglish": "Shenzhen",
+            "chinese": "深圳市",
+            "lng": "22.544482",
+            "lat": "114.064239"
+        },
+        "330100": {
+            "id": "330100",
+            "english": "hangzhou",
+            "bigEnglish": "Hangzhou",
+            "chinese": "杭州市",
+            "lng": "30.273517",
+            "lat": "120.164935"
+        },
+        "210100": {
+            "id": "210100",
+            "english": "shenyang",
+            "bigEnglish": "Shenyang",
+            "chinese": "沈阳市",
+            "lng": "41.804725",
+            "lat": "123.440373"
+        },
+        "610100": {
+            "id": "610100",
+            "english": "xian",
+            "bigEnglish": "Xi'an",
+            "chinese": "西安市",
+            "lng": "34.274164",
+            "lat": "108.955688"
+        },
+        "320100": {
+            "id": "320100",
+            "english": "nanjing",
+            "bigEnglish": "Nanjing",
+            "chinese": "南京市",
+            "lng": "32.070787",
+            "lat": "118.77467"
+        },
+        "420100": {
+            "id": "420100",
+            "english": "wuhan",
+            "bigEnglish": "Wuhan",
+            "chinese": "武汉市",
+            "lng": "30.582079",
+            "lat": "114.309301"
+        },
+        "510100": {
+            "id": "510100",
+            "english": "chengdu",
+            "bigEnglish": "Chengdu",
+            "chinese": "成都市",
+            "lng": "30.662647",
+            "lat": "104.073214"
+        }
+}
