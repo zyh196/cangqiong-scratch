@@ -1,0 +1,1 @@
+python main.py 510100 --dir newdata2
