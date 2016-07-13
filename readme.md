@@ -6,7 +6,11 @@ http://v.kuaidadi.com/
 
 data下有已经获取好的成都的相关数据
 
-## 通过命令行使用脚本下载
+## 快速下载
+
+双击`quick_run.bat`会开始下成都的数据。但这需要你先安装Anaconda(见下文)。
+
+## 通过命令行手动运行脚本下载
 
 ```
 $ python main.py 510100
